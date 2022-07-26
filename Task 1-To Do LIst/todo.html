@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="todo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d92759df72.js" crossorigin="anonymous"></script>
+    <title>To Do List</title>
+</head>
+<body>
+    <div class="container">
+        <div class="input-field">
+            <h1>
+                <i class="fas fa-clipboard-list"></i>   
+                &ensp;To Do List 
+            </h1>
+            <hr>
+            <form  onsubmit="return false" >
+                <input type="text" id="new-task" placeholder="Enter New Task"/>
+                <button class="btn" id="add-btn" >Add</button>
+            </form>
+        </div>
+        <div class="task-list">
+            <header>
+                <h1>
+                    <i class="fa-solid fa-bars-staggered"></i>   
+                    &ensp;Tasks 
+               </h1>
+               <hr>
+            </header>
+
+            <div class="tasks">
+                <!-- <div class="task">
+                    <span class="content strike">Task one</span>
+                    <div class="buttons">
+                        <button class="check-btn"><i class="fa-solid fa-text-slash"></i></button>
+                        <button class="del-btn"><i class="fa-solid fa-trash"></i></button>
+                    </div>    
+                </div> -->
+            </div>
+            <hr>
+            <footer class="footer">
+                
+                <div>You have <span id="task-count">0</span> tasks in the list</div>
+                <button class="btn" id="clear-btn">Clear All</button>
+            </footer>
+
+        </div>
+
+    </div>
+
+    
+    <script src="todo.js">   
+    </script>
+</body>
+</html>
+
