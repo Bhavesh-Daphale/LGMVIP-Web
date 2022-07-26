@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@font-face {
+  font-family: sevenSegment;
+  src: url(Seven-Segment.ttf);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #101010;
+}
+
+.container {
+  width: 300px;
+  background-color: #191919;
+  border-radius: 20px;
+  padding: 40px 30px;
+  
+}
+
+.display2 {
+  color: white;
+  background-color: #101010;
+  height: 40px;
+  padding: 0px 20px 20px 20px;
+  text-align: right;
+  font-family: sevenSegment;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  overflow: hidden;
+}
+
+.display1 h3,
+.display2 h1 {
+  font-weight: 300;
+}
+
+.display1 {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  background-color: #101010;
+  color: white;
+  height: 50px;
+  padding: 0 15px;
+  text-align: right;
+  font-family: sevenSegment;
+  margin-top: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  overflow: hidden;
+}
+
+.buttons {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.btn {
+  padding: 10px;
+  height: 65px;
+  width: 65px;
+  font-size: 17px;
+  color: #fff;
+  background-color: #101010;
+  border: none;
+  outline: none;
+  margin-top: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 8px 15px #00000033;
+  transition: all 0.1s ease 0s;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #1d2124;
+  box-shadow: 2px 2px 20px  #1d2124; 
+}
+
+.btn-color {
+  color: #00ffa5;
+  font-size: 20px;
+}
+
+.btn-equal {
+  height: 55px;
+  width: 137px;
+  font-size: 30px;
+  font-weight: 600;
+  background-color: #00ffa5;
+  color: #243441;
+}
+
+.btn-equal:hover {
+  background-color: #27ffb3;
+  box-shadow: 1px 1px 15px  #27ffb3; 
+}
+
+.btn-ac {
+  height: 55px;
+  width: 137px;
+  font-size: 20px;
+  font-weight: 600;
+  background-color: #101010;
+  color: #00ffa5;
+}
